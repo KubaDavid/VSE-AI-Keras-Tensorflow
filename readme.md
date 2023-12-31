@@ -32,7 +32,7 @@ Zdrojové kódy a kompletní práce je k dispozici zde: https://github.com/KubaD
 
 V dnešní době narůstá potřeba analyzovat rozsáhlé množství textových dat, která jsou generována na internetu, v sociálních sítích, recenzích a dalších zdrojích. Proto se analýza sentimentu textů stává klíčovým úkolem pro mnohé odborníky. V této oblasti se neuronové sítě ukazují jako jeden z efektivních nástrojů pro zpracování a klasifikaci těchto dat. Tyto sítě představují soubor algoritmů, kde každý neuron funguje jako matematická funkce, která přijímá vstupy a podle daného algoritmu je rozděluje do kategorií. Neuronové sítě se skládají z několika vrstev a jsou schopné zpracovávat jak textová, tak obrazová data. V tomto případě se však zaměřujeme specificky na textová data, zejména recenze z Amazonu.
 
-![](RackMultipart20231231-1-eic3jt_html_d75b10843b7652d3.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/278fb607-f4b5-4fc8-a059-a468df96927b)
 
 _Obrázek 1 - Ukázka dat_
 
@@ -44,15 +44,15 @@ V této studii jsme použili dva typy neuronových sítí: jednovrstvou neuronov
 
 Pro trénování a testování modelů byla využita datová sada od Kotzias et al. (2015), konkrétně "Sentiment Labelled Sentences Data Set – amazon\_cells\_labelled". Nejdříve byla tato data načtena pomocí knihovny pandas, přičemž byla rozdělena na jednotlivé věty a odpovídající štítky, které určují klasifikační kategorie. Poté jsem data rozdělil na trénovací, testovací a validační sady s využitím metody train\_test\_split z knihovny scikit-learn. Trénovací sada obsahuje 60 % všech dat, zatímco testovací a validační sady obsahují každá 20 % dat.
 
-![](RackMultipart20231231-1-eic3jt_html_62f1ec3861d0281d.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/8ea76df7-83c1-4833-834f-ef7efdff0df5)
 
 _Obrázek 2 - Import a úprava dat_
 
-![](RackMultipart20231231-1-eic3jt_html_329e2dd17cd7234b.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/815d1539-1b54-456a-a396-ac7463402fa5)
 
 _Obrázek 3 - Dělení na trénovací a testovací data_
 
-![](RackMultipart20231231-1-eic3jt_html_f28447c1778d5137.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/a3bd1110-e201-4d7e-bd11-db8818f34e6e)
 
 _Obrázek 4 - Preprocessing_
 
@@ -60,7 +60,7 @@ _Obrázek 4 - Preprocessing_
 
 První metodou použitou pro klasifikaci textu byla jednovrstvá neuronová síť. Tato síť se skládá pouze z jedné plně propojené vrstvy. Stejně jako u konvoluční sítě byla i zde provedena příprava vstupních dat pomocí techniky CountVectorizer. Poté byla vytvořena jednovrstvá síť s jednou plně propojenou vrstvou a byla v ní použita sigmoidní aktivační funkce. Stejná ztrátová funkce a optimalizační algoritmus, které byly použity u konvoluční sítě, byly aplikovány i zde. Metrikou použitou pro hodnocení výkonnosti sítě byla opět přesnost.
 
-![](RackMultipart20231231-1-eic3jt_html_c18751594c70db74.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/4acc5ca6-b804-4e88-988a-db7ded4b85b8)
 
 _Obrázek 5 - Nastavení jednovrstvé sítě_
 
@@ -70,11 +70,9 @@ V této práci byla pro klasifikaci textu využita konvoluční neuronová síť
 
 Pro definici konvoluční sítě byla použita knihovna Keras. V konvoluční vrstvě byla implementována aktivační funkce "relu", zatímco pro výstupní vrstvu byla použita sigmoidní aktivační funkce. Zmínka: Při testování s aktivační funkcí "softmax" jsem dosahoval pouze nízké přesnosti okolo 0,0x, což naznačuje pravděpodobnou chybu v implementaci. Pro trénink sítě byla zvolena ztrátová funkce binary\_crossentropy a optimalizační algoritmus Adam. Jako metrika byla použita přesnost.
 
-![](RackMultipart20231231-1-eic3jt_html_64af07930aabeb55.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/767ebc17-7e70-4150-b0de-9f5d4c267fb1)
 
 _Obrázek 6 - Nastavení konvoluční sítě_
-
-##
 
 ## Trénování a učení
 
@@ -84,7 +82,7 @@ Oba modely, konvoluční a jednovrstvá neuronová síť, byly trénovány na tr
 
 Po dokončení učení byly oba modely, konvoluční i jednovrstvá neuronová síť, vyhodnoceny na testovací množině dat. K tomuto účelu byla použita metoda evaluate z knihovny Keras. Jako hlavní metriky pro hodnocení kvality obou modelů byly zvoleny přesnost (accuracy) a ztrátová funkce (loss). Tyto metriky poskytují důležitý přehled o výkonu modelů v praktických podmínkách.
 
-![](RackMultipart20231231-1-eic3jt_html_b11dbc609fcbbbb.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/b66dad8d-98df-4dc6-9a9f-479ded9b8052)
 
 _Obrázek 7 - Učení_
 
@@ -103,11 +101,11 @@ Co se týče ztrátové funkce, konvoluční síť dosáhla hodnoty 0.420 na val
 
 Grafické zobrazení výsledků obou modelů ukazuje, že konvoluční síť má lepší výsledky na validačních datech, zatímco jednovrstvá síť exceluje na testovacích datech. Zajímavé je, že přes velký rozdíl v přesnosti na testovacích datech, oba modely dosahují podobného výkonu na validačních datech.
 
-![](RackMultipart20231231-1-eic3jt_html_b2af6463ed94d2e.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/de1dfb87-612d-4cdc-8947-991d42beb9a8)
 
 _Obrázek 8 - Správnost obou modelů_
 
-![](RackMultipart20231231-1-eic3jt_html_455c1b79bf8d272c.png)
+![image](https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow/assets/46845844/92344dbd-dd80-4be3-ad16-4110b2e85ce4)
 
 _Obrázek 9 - Ztrátová funkce obou modelů_
 
