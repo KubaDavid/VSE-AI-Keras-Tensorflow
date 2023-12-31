@@ -3,30 +3,6 @@
 Tato práce se věnuje studiu a vývoji neuronových sítí pro klasifikaci textových dat. Jejím cílem je zkoumat, jak efektivně a účinně tyto sítě dokážou zpracovat a rozdělit data do kategorií. Zaměřuje se zejména na analýzu sentimentu v textech, což znamená určení, jestli je obsah textu pozitivní či negativní. Výzkum využíval konkrétní soubor dat obsahující recenze zákazníků Amazonu. Proces psaní a úpravy kódu probíhal v prostředí Jupiter notebook za použití Google Colab a VSCode, s využitím dovedností získaných na cvičeních a rozšířením již existujícího kódu.
 
 Zdrojové kódy a kompletní práce je k dispozici zde: https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow
- 
-# Obsah
-
-[Abstrakt 2](#_Toc154915798)
-
-[Úvod 4](#_Toc154915799)
-
-[Metody 5](#_Toc154915800)
-
-[Předzpracování 5](#_Toc154915801)
-
-[Jednovrstvá síť 7](#_Toc154915802)
-
-[Konvoluční síť 7](#_Toc154915803)
-
-[Trénování a učení 8](#_Toc154915804)
-
-[Vyhodnocení 8](#_Toc154915805)
-
-[Výsledky 10](#_Toc154915806)
-
-[Závěr 12](#_Toc154915807)
-
-[Zdroje 13](#_Toc154915808)
 
 # Úvod
 
