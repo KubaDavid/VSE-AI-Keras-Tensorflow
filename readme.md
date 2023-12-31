@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # Abstrakt
 
 Tato práce se věnuje studiu a vývoji neuronových sítí pro klasifikaci textových dat. Jejím cílem je zkoumat, jak efektivně a účinně tyto sítě dokážou zpracovat a rozdělit data do kategorií. Zaměřuje se zejména na analýzu sentimentu v textech, což znamená určení, jestli je obsah textu pozitivní či negativní. Výzkum využíval konkrétní soubor dat obsahující recenze zákazníků Amazonu. Proces psaní a úpravy kódu probíhal v prostředí Jupiter notebook za použití Google Colab a VSCode, s využitím dovedností získaných na cvičeních a rozšířením již existujícího kódu.
 
-Zdrojové kódy a kompletní práce je k dispozici zde: 
+Zdrojové kódy a kompletní práce je k dispozici zde: https://github.com/KubaDavid/VSE-AI-Keras-Tensorflow
  
 # Obsah
 
@@ -127,9 +126,3 @@ V této studii jsme se věnovali analýze a implementaci dvou typů neuronových
 **3. TensorFlow.** _**Convolutional Neural Network (CNN).**_ **[Online] [Citace: 28. 12 2023.] https://www.tensorflow.org/tutorials/images/cnn.**
 
 **4. Datacamp.** _**Convolutional Neural Networks (CNN) with TensorFlow Tutorial.**_ **[Online] [Citace: 28. 12 2023.] https://www.datacamp.com/tutorial/cnn-tensorflow-python.**
-=======
-# Keras and Tensorflow
-This repo contains the last seminar work from VŠE AI.
-
-This work focuses on the study and development of neural networks for text data classification. It aims to investigate how efficiently and effectively these networks can process and categorize data. In particular, it focuses on sentiment analysis in texts, which means determining whether the content of a text is positive or negative. The research used a specific dataset containing Amazon customer reviews. The process of writing and editing code was done in a Jupiter notebook environment using Google Colab and VSCode, using skills learned in the exercises and extending existing code.
->>>>>>> 18ce873be0b1f15639e99b645dccff36802bcd7a
